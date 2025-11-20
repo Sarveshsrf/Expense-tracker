@@ -1,0 +1,26 @@
+:root{
+  --bg:#f6f8fa;
+  --card:#ffffff;
+  --accent:#2b7a78;
+  --muted:#6b7280;
+  --danger:#ef4444;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial, sans-serif; margin:0; background:var(--bg); color:#111}
+.container{max-width:900px;margin:28px auto;padding:16px}
+header h1{margin:0;font-size:28px}
+.muted{color:var(--muted)}
+.card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.04);margin-top:14px}
+.form-card .row{display:flex;gap:8px}
+input,select,button{padding:10px;border-radius:8px;border:1px solid #e6e9ee}
+button{background:var(--accent);color:#fff;border:none;cursor:pointer}
+#transactions-list{list-style:none;padding:0;margin:0}
+.tx{display:flex;justify-content:space-between;align-items:center;padding:10px;border-bottom:1px solid #f1f3f5}
+.tx .left{display:flex;gap:12px;align-items:center}
+.tx .amount{font-weight:700}
+.tx.expense .amount{color:var(--danger)}
+.controls{display:flex;gap:8px;align-items:center;margin-top:12px}
+.summary{display:flex;justify-content:space-between;align-items:center}
+.summary div{text-align:center}
+.small{font-size:12px}
+@media (max-width:700px){.form-card .row{flex-direction:column}}
